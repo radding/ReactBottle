@@ -1,0 +1,6 @@
+lib/
+__test__/
+coverage/
+tsconfig.json
+jest.config.json
+tslint.json

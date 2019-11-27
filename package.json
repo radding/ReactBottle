@@ -1,6 +1,5 @@
 {
   "name": "react-bottle",
-  "version": "0.1.0",
   "description": "A di container for react",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
