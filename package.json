@@ -3,6 +3,21 @@
   "version": "0.1.0",
   "description": "A di container for react",
   "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radding/ReactBottle"
+  },
+  "bugs": {
+    "url": "https://github.com/radding/ReactBottle/issues"
+  },
+  "keywords": [
+    "bottleJS",
+    "react",
+    "dependency injection",
+    "di"
+  ],
+  "homepage": "https://github.com/radding/ReactBottle#readme",
   "scripts": {
     "lint": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" \"__tests__/**/*.ts\" \"__tests__/**/*.tsx\"",
     "lint:fix": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" \"__tests__/**/*.ts\" \"__tests__/**/*.tsx\" --fix",
