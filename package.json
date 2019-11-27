@@ -2,7 +2,7 @@
   "name": "react-bottle",
   "version": "0.1.0",
   "description": "A di container for react",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "lint": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" \"__tests__/**/*.ts\" \"__tests__/**/*.tsx\"",
     "lint:fix": "tslint \"src/**/*.ts\" \"src/**/*.tsx\" \"__tests__/**/*.ts\" \"__tests__/**/*.tsx\" --fix",
@@ -13,7 +13,7 @@
     "clean": "rm dist/*"
   },
   "author": "Yoseph Radding",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
