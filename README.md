@@ -1,5 +1,8 @@
 # React-Bottle
 
+[![CircleCI](https://circleci.com/gh/radding/ReactBottle.svg?style=svg)](https://circleci.com/gh/radding/ReactBottle)
+[![npm version](https://badge.fury.io/js/react-bottle.svg)](https://badge.fury.io/js/react-bottle)
+
 A React binding for BottleJS Dependency injection
 
 ## Installation
