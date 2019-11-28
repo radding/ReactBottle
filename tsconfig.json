@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "module": "umd",
+        "module": "esnext",
         "noImplicitAny": true,
         "declaration": true,
         "outDir": "./dist",
@@ -10,10 +10,10 @@
         "jsx": "react",
         "esModuleInterop": true,
         "types": [
-            "node",
             "jest",
         ],
         "lib": [
+            "dom",
             "es2017"
         ]
     },
