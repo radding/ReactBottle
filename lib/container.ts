@@ -1,4 +1,4 @@
-import Bottle, { IContainer } from "bottlejs";
+import Bottle from "bottlejs";
 import React from "react";
 
 export default class ReactBottle extends Bottle {
