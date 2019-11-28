@@ -28,15 +28,15 @@ export const getProviderElement = (...fragments: DIFragment[]): React.FunctionCo
 export type DIMapper = (container: IContainer) => { [key: string]: any };
 
 export const wireUpDi = (mapDiToProps?: DIMapper) => (Component: React.ComponentType<any>): React.ComponentType<any> => {
-    if (diContainer === null) {
-        console.warn("Di Container was never loaded. Call getProviderElement or createDiContainer to load one.");
-        return Component;
-    }
-    if (!mapDiToProps) {
-        mapDiToProps = (_: IContainer) => ({});
-    }
     return (props: any) => {
         const Consumer = diContainer!.getConsumer();
+        if (diContainer === null) {
+            console.warn("Di Container was never loaded. Call getProviderElement or createDiContainer to load one.");
+            return <Component {...props} />;
+        }
+        if (!mapDiToProps) {
+            mapDiToProps = (_: IContainer) => ({});
+        }
         return (
             <Consumer>
                 {(container: IContainer) => {
