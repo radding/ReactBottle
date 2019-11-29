@@ -92,6 +92,15 @@ Injects your di container into your components. Takes an optional `mapDiToProps`
 to react-redux's mapStateToProps: It takes the di container and then maps those to friendlier prop
 names.
 
+### useDI hook
+
+```typescript
+const useDI = (override: any = {}) => any;
+```
+
+`useDI` is a react hook for your DI container. You can override or provide a DI container via the override for testing.
+The hook just returns your DI container.
+
 ### ReactBottle
 
 This is a react binding for BottleJS, a dead simple and powerful DI container.
